@@ -1,0 +1,36 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# Build outputs
+dist/
+build/
+out/
+target/
+bin/
+obj/
+
+# Dependencies / env
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# Secrets
+.env
+.env.*
+.env/
+secrets/
+
+# etc
+StudyCode__Private/
+assets/
+config.js
+wecandoit/
+book-source/
+idea/
+ENGLISH/

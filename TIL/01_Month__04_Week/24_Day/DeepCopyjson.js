@@ -1,0 +1,13 @@
+var obj = {
+    a: 1,
+    b: {
+      c: null,
+      d: [1, 2],
+      func1: function () {console.log(3);}
+    },
+    func2: function () {console.log(4);}
+  };
+
+var copyObjectViaJson = function (target) {
+    return JSON.parse(JSON.stringify(target));
+};

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>끝말잇기</title>
+    <style>
+        * { box-sizing: border-box; }
+        #result { width: 180px; height: 50px; margin: 5px; text-align: right }
+        #operator { width: 50px; height: 50px; margin: 5px; text-align: center }
+        button { width: 50px; height: 50px; margin: 5px; }        
+    </style>
+</head>
+<body>
+    <input readonly id="operator">
+    <input readonly type="number" id="result">
+    <div class="row">
+        <button id="num-7">7</button>
+        <button id="num-8">8</button>
+        <button id="num-9">9</button>
+        <button id="plus">+</button>
+    </div>
+    <div class="row">
+        <button id="num-4">4</button>
+        <button id="num-5">5</button>
+        <button id="num-6">6</button>
+        <button id="minus">-</button>
+    </div>
+    <div class="row">
+        <button id="num-1">1</button>
+        <button id="num-2">2</button>
+        <button id="num-3">3</button>
+        <button id="divide">/</button>
+    </div>
+    <div class="row">
+        <button id="clear">c</button>
+        <button id="num-0">0</button>
+        <button id="calculate">=</button>
+        <button id="multiply">x</button>
+    </div>        
+    <script>
+        let numOne = '';
+        let operator = ''; 
+        let numTwo = '';
+        const $operator = document.querySelector('#operator'); 
+        const $result = document.querySelector('#result');
+        for (let i = 0; i < 10; i++) {
+            document.querySelector('#num-0').addEventListener('click', () => {
+                if (operator) { 
+                    numTwo += '0';
+                } else {
+                    numOne += '0';
+                }
+                $result.value += '0'; // 클릭한 숫자 화면 표시            
+            }); 
+        }
+        
+        document.querySelector('#num-1').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '1';
+            } else {
+                numOne += '1';
+            }
+            $result.value += '1';
+        });
+        document.querySelector('#num-2').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '2';
+            } else {
+                numOne += '2';
+            }
+            $result.value += '2';
+        }); 
+        document.querySelector('#num-3').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '3';
+            } else {
+                numOne += '3';
+            }
+            $result.value += '3';
+        });
+        document.querySelector('#num-4').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '4';
+            } else {
+                numOne += '4';
+            }
+            $result.value += '4';
+        });
+        document.querySelector('#num-5').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '5';
+            } else {
+                numOne += '5';
+            }
+            $result.value += '5';
+        });
+        document.querySelector('#num-6').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '6';
+            } else {
+                numOne += '6';
+            }
+            $result.value += '6';
+        });
+        document.querySelector('#num-7').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '7';
+            } else {
+                numOne += '7';
+            }
+            $result.value += '7';
+        });
+        document.querySelector('#num-8').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '8';
+            } else {
+                numOne += '8';
+            }
+            $result.value += '8';
+        });
+        document.querySelector('#num-9').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '9';
+            } else {
+                numOne += '9';
+            }
+            $result.value += '9';
+        });
+        document.querySelector('#plus').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '1';
+            } else {
+                numOne += '1';
+            }
+            $result.value += '+';
+        });
+        document.querySelector('#minus').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '1';
+            } else {
+                numOne += '1';
+            }
+            $result.value += '-';
+        }); 
+        document.querySelector('#divide').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '1';
+            } else {
+                numOne += '1';
+            }
+            $result.value += '/';
+        });
+        document.querySelector('#multiply').addEventListener('click', () => {
+            if (operator) {
+                numTwo += '1';
+            } else {
+                numOne += '1';
+            }
+            $result.value += 'x';
+        });
+        document.querySelector('#calculate').addEventListener('click', () => {}); 
+        document.querySelector('#clear').addEventListener('click', () => {
+            $result.value = '';
+        });
+    </script>
+</body>
+</html>
