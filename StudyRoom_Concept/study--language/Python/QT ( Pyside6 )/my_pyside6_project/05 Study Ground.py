@@ -12,11 +12,12 @@ class MyWindow(QWidget):
         self.ui.setupUi(self)
 
     def UIinit(self):
-        self.setWindowTitle("My윈도우")
+        self.setWindowTitle("My윈도우 - TEST")
         self.setGeometry(100, 100, 800, 500)
 
 
 app = QApplication(sys.argv)
 my_window = MyWindow()
 my_window.show()
+
 sys.exit(app.exec())
