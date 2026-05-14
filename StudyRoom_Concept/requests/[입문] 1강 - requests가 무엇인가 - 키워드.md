@@ -1,3 +1,22 @@
+- requests
+- URL 구조
+- Scheme
+- Host
+- Path
+- Query String
+- params 
+- Header
+- User-Agent:
+- Content-Type
+- Authorization
+- Accept
+
+
+
+
+
+
+
 # 학습 키워드 정리
 
 ## 1. 주요 키워드 목록
@@ -55,6 +74,10 @@
 | POST                      | 비교 키워드      | 4      | 서버에 데이터를 생성하거나 전송할 때 사용하는 HTTP 요청 메서드입니다. |
 | PUT                       | 비교 키워드      | 3      | 문서에서 다음 단계에 다룰 실제 요청 메서드로 언급됩니다.     |
 | DELETE                    | 비교 키워드      | 3      | 문서에서 다음 단계에 다룰 실제 요청 메서드로 언급됩니다.     |
+
+
+
+
 
 
 
