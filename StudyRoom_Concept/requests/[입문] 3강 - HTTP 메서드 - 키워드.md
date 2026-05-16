@@ -1,5 +1,5 @@
 * 5가지 메서드
-* GE
+* GET
 * POST
 * PUT
 * PATCH
